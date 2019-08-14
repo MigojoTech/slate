@@ -53,9 +53,7 @@ let api = kittn.authorize('meowmeowmeow');
 
 > Make sure to replace `meowmeowmeow` with your API key.
 
-Skedgit uses API keys to allow access to the API. Please email us at dev@skedgitnow.com to request access to our Partner Portal. We will review the request and respond with instructions on how to gain access.[developer portal](http://example.com/developers).
-
-Skedgit expects for the API keys to be included in all API requests to the server in a header that looks like the following:
+Skedgit uses API keys to allow access to the API. Skedgit expects for the API keys to be included in all API requests to the server in a header that looks like the following:
 
 `x_access_token: meowmeowmeow`
 `company_token: meowmeowmeow`
