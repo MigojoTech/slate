@@ -7,9 +7,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - python
   - javascript
 
-toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/lord/slate'>Documentation Powered by Slate</a>
+
 
 includes:
   - errors
@@ -21,7 +19,7 @@ search: true
 
 Welcome to the Skedgit API! You can use our API to access certain API endpoints, which will return different information based on your needs.
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+Currently we only support language bindings in Shell but we will be adding Ruby, Python, and JavaScript soon! You can view Shell code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right (not available yet).
 
 # Authentication
 
