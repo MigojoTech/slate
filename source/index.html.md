@@ -435,7 +435,9 @@ let max = api.kittens.delete(2);
   "id": 2,
   "firstname": "UserUpdated",
   "lastname": "OneUpdated",
-  "email": "useroneupdated@test.com"
+  "email": "useroneupdated@test.com",
+  "license_type": "enterprise",
+  "profile_image_url": "image_url"
 }
 ```
 
