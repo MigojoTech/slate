@@ -2172,10 +2172,10 @@ let max = api.kittens.delete(2);
   "id": "9363",
   "title": "SkedgiSense Title",
   "links": {
-    "info_link": "https://login.skedgit.me/ez/hdpxBGiXD...",
-    "google_link": "https://login.skedgit.me/ez/hdpxBGiXD...",
-    "outlook_link": "https://login.skedgit.me/ez/hdpxBGiXD...",
-    "custom_link": "https://login.skedgit.me/ez/hdpxBGiXD...",
+    "info_link": "https://login.skedgit.me/ez/hdpxBGiXDjbhmMVWWot6No7s/info",
+    "google_link": "https://login.skedgit.me/ez/hdpxBGiXDjbhmMVWWot6No7s/google_redirect",
+    "outlook_link": "https://login.skedgit.me/ez/hdpxBGiXDjbhmMVWWot6No7s/outlook_redirect",
+    "custom_link": "https://login.skedgit.me/ez/hdpxBGiXDjbhmMVWWot6No7s/custom_link",
   }
 }
 
