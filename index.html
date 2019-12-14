@@ -6,6 +6,7 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>API Reference</title>
+    
 
     <style>
       .highlight table td { padding: 5px; }
@@ -228,16 +229,170 @@
             <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
           </li>
           <li>
-            <a href="#kittens" class="toc-h1 toc-link" data-title="Kittens">Kittens</a>
+            <a href="#company" class="toc-h1 toc-link" data-title="Company">Company</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Get All Kittens">Get All Kittens</a>
+                    <a href="#create-a-company" class="toc-h2 toc-link" data-title="Create a company">Create a company</a>
                   </li>
                   <li>
-                    <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Get a Specific Kitten">Get a Specific Kitten</a>
+                    <a href="#update-company-details" class="toc-h2 toc-link" data-title="Update Company Details">Update Company Details</a>
                   </li>
                   <li>
-                    <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
+                    <a href="#get-company-details" class="toc-h2 toc-link" data-title="Get Company Details">Get Company Details</a>
+                  </li>
+                  <li>
+                    <a href="#get-list-of-company-users" class="toc-h2 toc-link" data-title="Get List of Company Users">Get List of Company Users</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#user" class="toc-h1 toc-link" data-title="User">User</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#create-a-user" class="toc-h2 toc-link" data-title="Create a User">Create a User</a>
+                  </li>
+                  <li>
+                    <a href="#update-user-details" class="toc-h2 toc-link" data-title="Update User Details">Update User Details</a>
+                  </li>
+                  <li>
+                    <a href="#get-user-details" class="toc-h2 toc-link" data-title="Get User Details">Get User Details</a>
+                  </li>
+                  <li>
+                    <a href="#delete-user" class="toc-h2 toc-link" data-title="Delete User">Delete User</a>
+                  </li>
+                  <li>
+                    <a href="#get-user-calendar-list" class="toc-h2 toc-link" data-title="Get User Calendar List">Get User Calendar List</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#login-logout" class="toc-h1 toc-link" data-title="Login/Logout">Login/Logout</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#user-login" class="toc-h2 toc-link" data-title="User Login">User Login</a>
+                  </li>
+                  <li>
+                    <a href="#user-logout" class="toc-h2 toc-link" data-title="User Logout">User Logout</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#calendar-authorization" class="toc-h1 toc-link" data-title="Calendar Authorization">Calendar Authorization</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#google" class="toc-h2 toc-link" data-title="Google">Google</a>
+                  </li>
+                  <li>
+                    <a href="#microsoft-office-365-outlook" class="toc-h2 toc-link" data-title="Microsoft Office 365/Outlook">Microsoft Office 365/Outlook</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#personal-link" class="toc-h1 toc-link" data-title="Personal Link">Personal Link</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-personal-link-details" class="toc-h2 toc-link" data-title="Get Personal Link Details">Get Personal Link Details</a>
+                  </li>
+                  <li>
+                    <a href="#personalize-personal-link" class="toc-h2 toc-link" data-title="Personalize Personal Link">Personalize Personal Link</a>
+                  </li>
+                  <li>
+                    <a href="#toggle-personal-link-url-enable-disable" class="toc-h2 toc-link" data-title="Toggle Personal Link URL (Enable/Disable)">Toggle Personal Link URL (Enable/Disable)</a>
+                  </li>
+                  <li>
+                    <a href="#get-default-meeting-location" class="toc-h2 toc-link" data-title="Get default meeting location">Get default meeting location</a>
+                  </li>
+                  <li>
+                    <a href="#get-default-meeting-details" class="toc-h2 toc-link" data-title="Get default meeting details">Get default meeting details</a>
+                  </li>
+                  <li>
+                    <a href="#update-default-meeting-location" class="toc-h2 toc-link" data-title="Update default meeting location">Update default meeting location</a>
+                  </li>
+                  <li>
+                    <a href="#update-default-meeting-details" class="toc-h2 toc-link" data-title="Update default meeting details">Update default meeting details</a>
+                  </li>
+                  <li>
+                    <a href="#toggle-availability-days" class="toc-h2 toc-link" data-title="Toggle Availability Days">Toggle Availability Days</a>
+                  </li>
+                  <li>
+                    <a href="#copy-availability-times-to-all-other-days" class="toc-h2 toc-link" data-title="Copy Availability Times to all other days">Copy Availability Times to all other days</a>
+                  </li>
+                  <li>
+                    <a href="#update-users-availabilities" class="toc-h2 toc-link" data-title="Update Users Availabilities">Update Users Availabilities</a>
+                  </li>
+                  <li>
+                    <a href="#get-user-availability" class="toc-h2 toc-link" data-title="Get user availability">Get user availability</a>
+                  </li>
+                  <li>
+                    <a href="#reset-availability-to-default" class="toc-h2 toc-link" data-title="Reset Availability to default">Reset Availability to default</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#event-types" class="toc-h1 toc-link" data-title="Event Types">Event Types</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-event-type" class="toc-h2 toc-link" data-title="Get Event Type">Get Event Type</a>
+                  </li>
+                  <li>
+                    <a href="#get-all-personal-link-event-types" class="toc-h2 toc-link" data-title="Get all Personal Link event types">Get all Personal Link event types</a>
+                  </li>
+                  <li>
+                    <a href="#get-all-team-link-event-types" class="toc-h2 toc-link" data-title="Get All Team Link Event Types">Get All Team Link Event Types</a>
+                  </li>
+                  <li>
+                    <a href="#create-event-type" class="toc-h2 toc-link" data-title="Create Event Type">Create Event Type</a>
+                  </li>
+                  <li>
+                    <a href="#update-event-type" class="toc-h2 toc-link" data-title="Update Event Type">Update Event Type</a>
+                  </li>
+                  <li>
+                    <a href="#delete-event-type" class="toc-h2 toc-link" data-title="Delete Event Type">Delete Event Type</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#custom-links" class="toc-h1 toc-link" data-title="Custom Links">Custom Links</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#create-suggested-event" class="toc-h2 toc-link" data-title="Create Suggested Event">Create Suggested Event</a>
+                  </li>
+                  <li>
+                    <a href="#create-send-all-availability-link" class="toc-h2 toc-link" data-title="Create Send All Availability Link">Create Send All Availability Link</a>
+                  </li>
+                  <li>
+                    <a href="#get-all-custom-links" class="toc-h2 toc-link" data-title="Get All Custom Links">Get All Custom Links</a>
+                  </li>
+                  <li>
+                    <a href="#delete-custom-link" class="toc-h2 toc-link" data-title="Delete Custom Link">Delete Custom Link</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#skedgisense" class="toc-h1 toc-link" data-title="SkedgiSense">SkedgiSense</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#create-skedgisense-link" class="toc-h2 toc-link" data-title="Create SkedgiSense Link">Create SkedgiSense Link</a>
+                  </li>
+                  <li>
+                    <a href="#create-skedgisense-one-click-meeting" class="toc-h2 toc-link" data-title="Create SkedgiSense One-Click Meeting">Create SkedgiSense One-Click Meeting</a>
+                  </li>
+                  <li>
+                    <a href="#skedgisense-event-details" class="toc-h2 toc-link" data-title="SkedgiSense Event Details">SkedgiSense Event Details</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#appendix" class="toc-h1 toc-link" data-title="Appendix">Appendix</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#meeting-type-event-type" class="toc-h2 toc-link" data-title="Meeting Type / Event Type">Meeting Type / Event Type</a>
+                  </li>
+                  <li>
+                    <a href="#custom-link" class="toc-h2 toc-link" data-title="Custom Link">Custom Link</a>
+                  </li>
+                  <li>
+                    <a href="#time-zone-values" class="toc-h2 toc-link" data-title="Time Zone Values">Time Zone Values</a>
                   </li>
               </ul>
           </li>
@@ -245,20 +400,14 @@
             <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
           </li>
       </ul>
-        <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
-            <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
-        </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<p>Welcome to the Skedgit API! You can use our API to access certain API endpoints, which will return different information based on your needs.</p>
 
-<p>We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
-
-<p>This example API documentation page was created with <a href="https://github.com/lord/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
+<p>Currently we only support language bindings in Shell but we will be adding Ruby, Python, and JavaScript soon! You can view Shell code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right (not available yet).</p>
 <h1 id='authentication'>Authentication</h1>
 <blockquote>
 <p>To authorize, use this code:</p>
@@ -280,16 +429,15 @@ curl <span class="s2">"api_endpoint_here"</span>
 <p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
 </blockquote>
 
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
+<p>Skedgit uses API keys to allow access to the API. Skedgit expects for the API keys to be included in all API requests to the server in a header that looks like the following:</p>
 
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
-
-<p><code>Authorization: meowmeowmeow</code></p>
+<p><code>x_access_token: meowmeowmeow</code>
+<code>company_token: meowmeowmeow</code></p>
 
 <aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
+You must replace <code>meowmeowmeow</code> with your API keys.
 </aside>
-<h1 id='kittens'>Kittens</h1><h2 id='get-all-kittens'>Get All Kittens</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<h1 id='company'>Company</h1><h2 id='create-a-company'>Create a company</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
 
 <span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
 <span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
@@ -297,8 +445,8 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 
 <span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
 <span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/company/create"</span>
+  -H <span class="s2">"vendor_token: meowmeowmeow"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
 
 <span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
@@ -309,48 +457,52 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
   </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OrgOne"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"company_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SbdFE9M9JqwgEnuU3LtDokZA"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"number_of_licenses"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"contract_start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T00:00:00.000Z"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"contact_end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-12-31T00:00:00.000Z"</span><span class="w">
   </span><span class="p">}</span><span class="w">
+
 </span><span class="p">]</span><span class="w">
 </span></code></pre>
-<p>This endpoint retrieves all kittens.</p>
+<p>This endpoint creates a company.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>GET http://example.com/api/kittens</code></p>
+<p><code>POST https://login.skedgitnow.com/api/v1/company/create</code></p>
 <h3 id='query-parameters'>Query Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
-<th>Default</th>
+<th>Value</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
+<td>name</td>
+<td>&quot;OrgOne&quot;</td>
+<td>This is the name of the company being created.</td>
 </tr>
 <tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
+<td>number_of_lienses</td>
+<td>0</td>
+<td>This is the number of licenses the company will start with.</td>
+</tr>
+<tr>
+<td>contract_start_date</td>
+<td>2019-01-01</td>
+<td>This is the date that their contract with Skedgit will start.</td>
+</tr>
+<tr>
+<td>contract_end_date</td>
+<td>2019-12-31</td>
+<td>This is the date that their contract with Skedgit will end.</td>
 </tr>
 </tbody></table>
 
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
+<aside class="notice">
+Remember — All the Parameters must be complete!
 </aside>
-<h2 id='get-a-specific-kitten'>Get a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<h2 id='update-company-details'>Update Company Details</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
 
 <span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
 <span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -358,8 +510,9 @@ Remember — a happy kitten is an authenticated kitten!
 
 <span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
 <span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/company/update"</span>
+  -H <span class="s2">"vendor_token: meowmeowmeow"</span>
+  -H <span class="s2">"company_token: meowmeowmeow"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
 
 <span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
@@ -369,31 +522,47 @@ Remember — a happy kitten is an authenticated kitten!
 <p>The above command returns JSON structured like this:</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OrgOneUpdated"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"number_of_licenses"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contract_start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-05-01T00:00:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contract_end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-04-30T00:00:00.000Z"</span><span class="p">,</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<p>This endpoint retrieves a specific kitten.</p>
+<p>This endpoint updates company details.</p>
 
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+<aside class="warning">You must input both the vendor and company tokens to update the details</aside>
 <h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET http://example.com/kittens/&lt;ID&gt;</code></p>
+<p><code>PUT htts://login.skedgitnow.com/api/v1/company/update</code></p>
 <h3 id='url-parameters'>URL Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Value</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to retrieve</td>
+<td>name</td>
+<td>&quot;OrgOneUpdated&quot;</td>
+<td>This will update the name of the company</td>
+</tr>
+<tr>
+<td>number_of_licenses</td>
+<td>2</td>
+<td>This will update the number of licenses assigned to the company</td>
+</tr>
+<tr>
+<td>contract_start_date</td>
+<td>&quot;2019-05-01T00:00:00.000Z&quot;</td>
+<td>This will update the start date of the contract</td>
+</tr>
+<tr>
+<td>contract_end_date</td>
+<td>&quot;2019-04-30T00:00:00.000Z&quot;</td>
+<td>This will update the end date of the contract</td>
 </tr>
 </tbody></table>
-<h2 id='delete-a-specific-kitten'>Delete a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<h2 id='get-company-details'>Get Company Details</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
 
 <span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
 <span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -401,9 +570,212 @@ Remember — a happy kitten is an authenticated kitten!
 
 <span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
 <span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -X DELETE
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/company/details"</span>
+  -H <span class="s2">"vendor_token: meowmeowmeow"</span>
+  -H <span class="s2">"company_token: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OrgOneUpdated"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"company_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SbdFE9M9JqwgEnuU3LtDokZA"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"number_of_licenses"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contract_start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-05-01T00:00:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contract_end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-04-30T00:00:00.000Z"</span><span class="w">  
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint returns the company details.</p>
+<h3 id='http-request-3'>HTTP Request</h3>
+<p><code>GET https://login.skedgitnow.com/api/v1/company/details</code></p>
+<h3 id='url-parameters-2'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<aside class="notice">
+There are no Parameter's for this endpoint.
+</aside>
+<h2 id='get-list-of-company-users'>Get List of Company Users</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/users/get_company_users"</span>
+  -H <span class="s2">"x_access_token: meowmeowmeow"</span>
+
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Test Users"</span><span class="w"> 
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint returns the Users associated with their Company.</p>
+<h3 id='http-request-4'>HTTP Request</h3>
+<p><code>GET https://login.skedgitnow.com/api/v1/users/get_company_users</code></p>
+<h3 id='url-parameters-3'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<aside class="notice">
+There are no Parameter's for this endpoint.
+</aside>
+<h1 id='user'>User</h1><h2 id='create-a-user'>Create a User</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/users/create"</span>
+  -H <span class="s2">"vendor_token: meowmeowmeow"</span>
+  -H <span class="s2">"company_token: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Successfully Created"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eyJ0eXAi0iJKV1Q..."</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">11</span><span class="w">  
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint creates a Skedgit User for the company indicated by the company_token.</p>
+<h3 id='http-request-5'>HTTP Request</h3>
+<p><code>POST https://login.skedgitnow.com/api/v1/users/create</code></p>
+<h3 id='url-parameters-4'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>firstname</td>
+<td>&quot;User&quot;</td>
+<td>This Parameter configures the first name of the Skedgit User.</td>
+</tr>
+<tr>
+<td>lastname</td>
+<td>&quot;One&quot;</td>
+<td>This Parameter configures the last name of the Skedgit User.</td>
+</tr>
+<tr>
+<td>email</td>
+<td>&quot;userone@test.com&quot;</td>
+<td>This Parameter configures the email of the Skedgit User.</td>
+</tr>
+<tr>
+<td>password</td>
+<td>&quot;Password1!&quot;</td>
+<td>This Parameter configures the password of the Skedgit User.</td>
+</tr>
+<tr>
+<td>password_confirmation</td>
+<td>&quot;Password1!&quot;</td>
+<td>This Parameter confirms the password of the Skedgit User and must match the password.</td>
+</tr>
+</tbody></table>
+<h2 id='update-user-details'>Update User Details</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/users/udpate"</span>
+  -H <span class="s2">"x_access_token: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Successfully Updated"</span><span class="w"> 
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint updates the Skedgit User details.</p>
+
+<aside class="notice">You only need to input the parameters that you wish to update.</aside>
+<h3 id='http-request-6'>HTTP Request</h3>
+<p><code>PUT https://login.skedgitnow.com/api/v1/users/udpate</code></p>
+<h3 id='url-parameters-5'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>firstname</td>
+<td>&quot;UserUpdated&quot;</td>
+<td>This Parameter updates the first name of the Skedgit User with the new value.</td>
+</tr>
+<tr>
+<td>lastname</td>
+<td>&quot;OneUpdated&quot;</td>
+<td>This Parameter updates the last name of the Skedgit User with the new value.</td>
+</tr>
+<tr>
+<td>email</td>
+<td>&quot;useroneupdated@test.com&quot;</td>
+<td>This Parameter updates the email of the Skedgit User with the new value.</td>
+</tr>
+<tr>
+<td>password</td>
+<td>&quot;Password1!&quot;</td>
+<td>This Parameter updates the password of the Skedgit User with the new value.</td>
+</tr>
+<tr>
+<td>password_confirmation</td>
+<td>&quot;Password1!&quot;</td>
+<td>This Parameter confirms the new password value of the Skedgit User and must match the password.</td>
+</tr>
+</tbody></table>
+<h2 id='get-user-details'>Get User Details</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/users/details"</span>
+  -H <span class="s2">"x_access_token: meowmeowmeow"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
 
 <span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
@@ -414,30 +786,1827 @@ Remember — a happy kitten is an authenticated kitten!
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"deleted"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">":("</span><span class="w">
+  </span><span class="s2">"firstname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"UserUpdated"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"lastname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OneUpdated"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"useroneupdated@test.com"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"license_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"enterprise"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"profile_image_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image_url"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<p>This endpoint deletes a specific kitten.</p>
-<h3 id='http-request-3'>HTTP Request</h3>
-<p><code>DELETE http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters-2'>URL Parameters</h3>
+<p>This endpoint displays the Skedgit User details.</p>
+<h3 id='http-request-7'>HTTP Request</h3>
+<p><code>GET https://login.skedgitnow.com/api/v1/users/details</code></p>
+<h3 id='url-parameters-6'>URL Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<aside class="notice">There are no Parameters for this endpoint.</aside>
+<h2 id='delete-user'>Delete User</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/users/delete/:user_id"</span>
+  -H <span class="s2">"vendor_token: meowmeowmeow"</span>
+  -H <span class="s2">"company_token: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Successfully Deleted"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint deletes a User.</p>
+
+<aside class="warning">Make sure to input the user_id in the URL and not the parameter.</aside>
+<h3 id='http-request-8'>HTTP Request</h3>
+<p><code>DELETE https://login.skedgitnow.com/api/v1/users/delete/:user_id</code></p>
+<h3 id='url-parameters-7'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to delete</td>
+<td>user_id (in the URL)</td>
+<td>2</td>
+<td>This is the user_id that will be deleted</td>
 </tr>
 </tbody></table>
-<h1 id='errors'>Errors</h1>
-<aside class="notice">
-This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
-</aside>
+<h2 id='get-user-calendar-list'>Get User Calendar List</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
 
-<p>The Kittn API uses the following error codes:</p>
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/users/get_calendars"</span>
+  -H <span class="s2">"x_access_token: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"calendar_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"test.user@google.com"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p>This endpoint returns a list of the Calendars associated with the User.</p>
+<h3 id='http-request-9'>HTTP Request</h3>
+<p><code>GET https://login.skedgitnow.com/api/v1/users/get_calendars</code></p>
+<h3 id='url-parameters-8'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<aside class="notice">There are no Parameters associated with this endpoint.</aside>
+<h1 id='login-logout'>Login/Logout</h1><h2 id='user-login'>User Login</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/auth/login"</span>
+
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"meowmeowmeow"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint returns the x_access_token of the Skedgit User.</p>
+<h3 id='http-request-10'>HTTP Request</h3>
+<p><code>POST https://login.skedgitnow.com/api/v1/auth/login</code></p>
+<h3 id='url-parameters-9'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>email</td>
+<td>test@googleuser.com</td>
+<td>This is the email that is associated with the User login</td>
+</tr>
+<tr>
+<td>password</td>
+<td>Password1!</td>
+<td>This is the password that is associated with the User login</td>
+</tr>
+<tr>
+<td>vendor_token</td>
+<td>meowmeowmeow</td>
+<td>This value is the API Access Token assigned to Partner</td>
+</tr>
+</tbody></table>
+<h2 id='user-logout'>User Logout</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/auth/logout"</span>
+
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"successful logout"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint logs out the Skedgit User</p>
+<h3 id='http-request-11'>HTTP Request</h3>
+<p><code>POST https://login.skedgitnow.com/api/v1/auth/logout</code></p>
+<h3 id='url-parameters-10'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>email</td>
+<td>test@googleuser.com</td>
+<td>This is the email that is associated with the User login</td>
+</tr>
+<tr>
+<td>password</td>
+<td>Password1!</td>
+<td>This is the password that is associated with the User login</td>
+</tr>
+<tr>
+<td>vendor_token</td>
+<td>meowmeowmeow</td>
+<td>This value is the API Access Token assigned to Partner</td>
+</tr>
+</tbody></table>
+<h1 id='calendar-authorization'>Calendar Authorization</h1><h2 id='google'>Google</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>This endpoint is executed through your web browser since we have to direct you to Google Authorization Page. Please make sure there is a redirect URI value inside the Partner Portal before executing this endpoint.
+
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>Entering the information in your web browser will return a success message in browser like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="err">https</span><span class="p">:</span><span class="err">//login.skegitnow.com/?message=success</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint authorizes Google Calendars for the Skedgit User and only needs to be executed once for each Calendar for the connection to be established.</p>
+<h3 id='http-request-12'>HTTP Request</h3>
+<p><code>GET https://login.skedgitnow.com/api/v1/calendars/authorize_google_calendar?token&amp;redirect_uri</code></p>
+<h3 id='url-parameters-11'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>token</td>
+<td>meowmeowmeow</td>
+<td>This is the x_access_token of the Skedgit User and will be the value of &#39;token&#39; in the URL</td>
+</tr>
+<tr>
+<td>redirect_uri</td>
+<td>https://skedgitnow.com</td>
+<td>This value is configured in the Redirect URI tab in the Partner Portal and will be the value of &#39;redirect_uri&#39; in the URL</td>
+</tr>
+</tbody></table>
+<h2 id='microsoft-office-365-outlook'>Microsoft Office 365/Outlook</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>This endpoint is executed through your web browser since we have to direct you to the Microsoft Authorization Page. Please make sure there is a redirect URI value inside the Partner Portal before executing this endpoint.
+
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>Entering the information in your web browser will return a success message in browser like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="err">https</span><span class="p">:</span><span class="err">//login.skegitnow.com/?message=success</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint authorizes Microsoft Calendars for the Skedgit User and only needs to be executed once for each Calendar for the connection to be established.</p>
+<h3 id='http-request-13'>HTTP Request</h3>
+<p><code>GET https://login.skedgitnow.com/api/v1/calendars/authorize_outlook_calendar?token&amp;redirect_uri</code></p>
+<h3 id='url-parameters-12'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>token</td>
+<td>meowmeowmeow</td>
+<td>This is the x_access_token of the Skedgit User and will be the value of &#39;token&#39; in the URL</td>
+</tr>
+<tr>
+<td>redirect_uri</td>
+<td>https://skedgitnow.com</td>
+<td>This value is configured in the Redirect URI tab in the Partner Portal and will be the value of &#39;redirect_uri&#39; in the URL</td>
+</tr>
+</tbody></table>
+<h1 id='personal-link'>Personal Link</h1><h2 id='get-personal-link-details'>Get Personal Link Details</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/personal_link_details"</span>
+  -H <span class="s2">"x_access_token"</span>: <span class="s2">"meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"personal_link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.skedgit.me/testpersonallink"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint returns the Personal Link URL and status (enabled/disbaled)</p>
+<h3 id='http-request-14'>HTTP Request</h3>
+<p><code>GET https://login.skedgitnow.com/api/v1/personal_link_details</code></p>
+<h3 id='url-parameters-13'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<aside class="notice">There are no Parameters associated with this endpoint.</aside>
+<h2 id='personalize-personal-link'>Personalize Personal Link</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/personalize_personal_link"</span>
+  -H <span class="s2">"x_access_token"</span>: <span class="s2">"meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sucessfully updated the personal link."</span><span class="p">,</span><span class="w"> </span><span class="err">OR</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The calendar token you entered already exists, please enter a different token."</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint updates the personal link URL with a value you choose.</p>
+<h3 id='http-request-15'>HTTP Request</h3>
+<p><code>PATCH https://login.skedgitnow.com/api/v1/personal_link_details</code></p>
+<h3 id='url-parameters-14'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>calendar_url_token</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='toggle-personal-link-url-enable-disable'>Toggle Personal Link URL (Enable/Disable)</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/toggle_personal_link"</span>
+  -H <span class="s2">"x_access_token"</span>: <span class="s2">"meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Successfully updated the personal link."</span><span class="w">
+
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint returns the Personal Link URL and status (enabled/disbaled)</p>
+<h3 id='http-request-16'>HTTP Request</h3>
+<p><code>PATCH https://login.skedgitnow.com/api/v1/toggle_personal_link</code></p>
+<h3 id='url-parameters-15'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<aside class="notice">There are no Parameters associated with this endpoint.</aside>
+<h2 id='get-default-meeting-location'>Get default meeting location</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/default_meeting_location"</span>
+  -H <span class="s2">"x_access_token"</span>: <span class="s2">"meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"default meeting location"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This is the default meeting location"</span><span class="w">
+
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint returns the default meeting location.</p>
+<h3 id='http-request-17'>HTTP Request</h3>
+<p><code>GET https://login.skedgitnow.com/api/v1/default_meeting_location</code></p>
+<h3 id='url-parameters-16'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<aside class="notice">There are no Parameters associated with this endpoint.</aside>
+<h2 id='get-default-meeting-details'>Get default meeting details</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/default_meeting_details"</span>
+  -H <span class="s2">"x_access_token"</span>: <span class="s2">"meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"default meeting details"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This is the default meeting details"</span><span class="w">
+
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint returns the default meeting details.</p>
+<h3 id='http-request-18'>HTTP Request</h3>
+<p><code>GET https://login.skedgitnow.com/api/v1/default_meeting_details</code></p>
+<h3 id='url-parameters-17'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<aside class="notice">There are no Parameters associated with this endpoint.</aside>
+<h2 id='update-default-meeting-location'>Update default meeting location</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/update_default_meeting_location"</span>
+  -H <span class="s2">"x_access_token"</span>: <span class="s2">"meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Successfully updated Default Meeting Location"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint updates the default meeting location.</p>
+<h3 id='http-request-19'>HTTP Request</h3>
+<p><code>PATCH https://login.skedgitnow.com/api/v1/update_default_meeting_location</code></p>
+<h3 id='url-parameters-18'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>default_meeting_location</td>
+<td>This is the new default meeting location</td>
+<td>This will update the default meeting location with the new value inputted.</td>
+</tr>
+</tbody></table>
+<h2 id='update-default-meeting-details'>Update default meeting details</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/update_default_meeting_details"</span>
+  -H <span class="s2">"x_access_token"</span>: <span class="s2">"meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Successfully updated default meeting details"</span><span class="w">
+
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint updates the default meeting details.</p>
+<h3 id='http-request-20'>HTTP Request</h3>
+<p><code>PATCH https://login.skedgitnow.com/api/v1/update_default_meeting_details</code></p>
+<h3 id='url-parameters-19'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>default_meeting_details</td>
+<td>This is the new default meeting details</td>
+<td>This will update the default meeting details with the new value inputted.</td>
+</tr>
+</tbody></table>
+<h2 id='toggle-availability-days'>Toggle Availability Days</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/toggle_availability_day"</span>
+  -H <span class="s2">"x_access_token"</span>: <span class="s2">"meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Successfully toggled Day availablity"</span><span class="w">
+
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint toggles on/off availability for certain days that you select.</p>
+
+<aside class="notice">Each day must be inputted individually and not in a list or array</aside>
+<h3 id='http-request-21'>HTTP Request</h3>
+<p><code>PATCH https://login.skedgitnow.com/api/v1/toggle_availability_day</code></p>
+<h3 id='url-parameters-20'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>day_type</td>
+<td>monday</td>
+<td>In this example &#39;Monday&#39; would be toggled on or off depending on the current status of that day.</td>
+</tr>
+</tbody></table>
+<h2 id='copy-availability-times-to-all-other-days'>Copy Availability Times to all other days</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/user_availability_copy_to_all"</span>
+  -H <span class="s2">"x_access_token"</span>: <span class="s2">"meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Successfully Updated"</span><span class="w">
+
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint copies the availability times to all active days.</p>
+
+<aside class="notice">time_zone corresponds to logged in users time zone timings are an array of the following object {
+                          start_time_hour: value,
+                          end_time_hour: value
+                    }
+                    Where value is a number between 0 and 23  (Note: all the disabled days will remain unchanged)  </aside>
+<h3 id='http-request-22'>HTTP Request</h3>
+<p><code>PUT https://login.skedgitnow.com/api/v1/user_availability_copy_to_all</code></p>
+<h3 id='url-parameters-21'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>{&quot;time_zone&quot;:</td>
+<td>&quot;America/Denver&quot;,</td>
+<td>This parameter configures the time zone.</td>
+</tr>
+<tr>
+<td>&quot;timings&quot;:</td>
+<td>[{&quot;start_time_hour&quot;: 9,&quot;end_time_hour&quot;: 12},{&quot;start_time_hour&quot;: 14,&quot;end_time_hour&quot;: 17}]}</td>
+<td>This parameter details out the times Skedgit User is available during the day.</td>
+</tr>
+</tbody></table>
+<h2 id='update-users-availabilities'>Update Users Availabilities</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/update_availabilities"</span>
+  -H <span class="s2">"x_access_token"</span>: <span class="s2">"meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Successfully Updated"</span><span class="w">
+
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint updates the availability times for all the days indicated.</p>
+
+<aside class="notice">Where user_availabilities is an array object that represent all the days of the week, it has two properties (day, timings) day represents the day namely Sunday to Saturday and timings is an array that represents the timing intervals for that day (Note: If any day is missing in the user_availabilities array, that day will be disabled.)  </aside>
+<h3 id='http-request-23'>HTTP Request</h3>
+<p><code>PUT https://login.skedgitnow.com/api/v1/update_availabilities</code></p>
+<h3 id='url-parameters-22'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>{&quot;time_zone&quot;:</td>
+<td>&quot;America/Denver&quot;,</td>
+<td>This parameter configures the time zone.</td>
+</tr>
+<tr>
+<td>&quot;user_availabilities&quot;:</td>
+<td>[{&quot;day&quot;: &quot;Monday&quot;,&quot;timings&quot;: [ {&quot;start_time_hour&quot;: 9,&quot;end_time_hour&quot;: 12}, {&quot;start_time_hour&quot;: 13, &quot;end_time_hour&quot;: 17}]}</td>
+<td>This parameter details out the days and times the Skedgit User is available during the day for each day of the week.</td>
+</tr>
+</tbody></table>
+<h2 id='get-user-availability'>Get user availability</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/get_user_availability"</span>
+  -H <span class="s2">"x_access_token"</span>: <span class="s2">"meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"day"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sunday"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T03:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T11:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="p">},</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"day"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Monday"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T03:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T06:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">},</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"day"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Monday"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T08:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T11:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">},</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"day"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Tuesday"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T03:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T06:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">},</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"day"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Tuesday"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T08:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T11:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">},</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"day"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wednesday"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T03:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T06:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">},{</span><span class="w">
+  </span><span class="s2">"day"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wednesday"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T08:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T11:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">},</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"day"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Thursday"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T03:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T06:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">},</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"day"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Thursday"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T08:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T11:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">},</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"day"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Friday"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T03:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T06:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">},</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"day"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Friday"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T08:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T11:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">},</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"day"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Saturday"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T03:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"end_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-01-01T11:30:00.000Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint returns the users current availability for the week.</p>
+<h3 id='http-request-24'>HTTP Request</h3>
+<p><code>GET https://login.skedgitnow.com/api/v1/get_user_availability</code></p>
+<h3 id='url-parameters-23'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<aside class="notice">There are no Parameters associated with this endpoint.</aside>
+<h2 id='reset-availability-to-default'>Reset Availability to default</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/reset_user_availability"</span>
+  -H <span class="s2">"x_access_token: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Successfully Reset"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint resets the Skedgit Users availability back to defaults</p>
+
+<aside class="notice">Note: this will reset your availability to 9 AM - 5 PM from Sunday to Saturday</aside>
+<h3 id='http-request-25'>HTTP Request</h3>
+<p><code>PATCH https://login.skedgitnow.com/api/v1/reset_user_availabilty</code></p>
+<h3 id='url-parameters-24'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>time_zone</td>
+<td>America/Denver</td>
+<td>This configures the time zone for the default availibility.</td>
+</tr>
+</tbody></table>
+<h1 id='event-types'>Event Types</h1><h2 id='get-event-type'>Get Event Type</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/event_type/:id"</span>
+  -H <span class="s2">"x_access_token: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">32</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This is an Personal Link Event Title"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"include_default_meeting_description"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"include_default_meeting_location"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"owner_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"owner_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"is_inclusive"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"owner_calendar_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">17</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">31</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This is a Team Link Event Title"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">120</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"include_default_meeting_description"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"include_default_meeting_location"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"owner_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"team"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"owner_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"is_inclusive"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"owner_calendar_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint retrieves a specific event type&#39;s details that you identify</p>
+<h3 id='http-request-26'>HTTP Request</h3>
+<p><code>GET https://login.skedgitnow.com/api/v1/event_type/:id</code></p>
+<h3 id='url-parameters-25'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>32</td>
+<td>This parameter will be appended to the URL where &#39;:id&#39; is indicated.</td>
+</tr>
+</tbody></table>
+<h2 id='get-all-personal-link-event-types'>Get all Personal Link event types</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/personal_link_event_types"</span>
+  -H <span class="s2">"x_access_token: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">21</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Event Title One"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"include_default_meeting_description"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"include_default_meeting_location"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"owner_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"owner_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"is_inclusive"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"owner_calendar_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">17</span><span class="w">
+</span><span class="p">},</span><span class="w">
+
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">22</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Event Title Two"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"include_default_meeting_description"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"include_default_meeting_location"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"owner_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"owner_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"is_inclusive"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"owner_calendar_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">17</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all Personal Link event types for a specific Skedgit User</p>
+<h3 id='http-request-27'>HTTP Request</h3>
+<p><code>GET https://login.skedgitnow.com/api/v1/personal_link_event_types</code></p>
+<h3 id='url-parameters-26'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<aside class="notice">There are no Parameters associated with this endpoint.</aside>
+<h2 id='get-all-team-link-event-types'>Get All Team Link Event Types</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/team_link_event_types/:team_id"</span>
+  -H <span class="s2">"x_access_token: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">31</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This is a Team Link Event Title"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">120</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"include_default_meeting_description"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"include_default_meeting_location"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"owner_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"team"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"owner_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"is_inclusive"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"owner_calendar_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span><span class="p">},</span><span class="w">
+</span><span class="p">]</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint retrieves a specific team event type</p>
+<h3 id='http-request-28'>HTTP Request</h3>
+<p><code>GET https://login.skedgitnow.com/api/v1/team_link_event_types/:team_id</code></p>
+<h3 id='url-parameters-27'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>:team_id</td>
+<td>31</td>
+<td>This parameter will be appended to the URL and retrieve a specific team link</td>
+</tr>
+</tbody></table>
+<h2 id='create-event-type'>Create Event Type</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/event_type"</span>
+  -H <span class="s2">"x_access_token: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">32</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This is a new Event Title"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"include_default_meeting_description"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"include_default_meeting_location"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"owner_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"owner_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"is_inclusive"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"owner_calendar_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">17</span><span class="w">
+</span><span class="p">},</span><span class="w">
+
+
+</span></code></pre>
+<p>This endpoint creates an event type</p>
+<h3 id='http-request-29'>HTTP Request</h3>
+<p><code>POST https://login.skedgitnow.com/api/v1/event_type</code></p>
+<h3 id='url-parameters-28'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>title</td>
+<td>This is a new Event Title</td>
+<td>This parameter will configure the title of the event type</td>
+</tr>
+<tr>
+<td>duration</td>
+<td>60</td>
+<td>This parameter will configure the duration of the event type</td>
+</tr>
+<tr>
+<td>include_default_meeting_description</td>
+<td>false</td>
+<td>This parameter is optional and will include the default meeting description</td>
+</tr>
+<tr>
+<td>include_default_meeting_location</td>
+<td>false</td>
+<td>This parameter is optional and will include the default meeting location</td>
+</tr>
+<tr>
+<td>is_inclusive</td>
+<td>false</td>
+<td>This parameter is specific to team link and if true will indicate that all team members must be available</td>
+</tr>
+<tr>
+<td>owner_calendar_id</td>
+<td>17</td>
+<td>This parameter indicates who is the owner of the event</td>
+</tr>
+<tr>
+<td>team_id</td>
+<td>13</td>
+<td>Note: if team_id is provided it will create an event type for Team Link. Also, for creating a Team Link event the user needs to be a part of the team, otherwise you will get &quot;Action restricted, user doesn&#39;t belog to the Team&quot; error</td>
+</tr>
+</tbody></table>
+<h2 id='update-event-type'>Update Event Type</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/event_type/:id"</span>
+  -H <span class="s2">"x_access_token: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">31</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Updated Event Title"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">120</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"include_default_meeting_description"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"include_default_meeting_location"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"owner_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"owner_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"is_inclusive"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"owner_calendar_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">17</span><span class="w">
+</span><span class="p">},</span><span class="w">
+
+
+</span></code></pre>
+<p>This endpoint updates an event type</p>
+<h3 id='http-request-30'>HTTP Request</h3>
+<p><code>PUT https://login.skedgitnow.com/api/v1/event_type/:id</code></p>
+<h3 id='url-parameters-29'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>title</td>
+<td>Updated Event Title</td>
+<td>This parameter will configure the title of the event type</td>
+</tr>
+<tr>
+<td>duration</td>
+<td>120</td>
+<td>This parameter will configure the duration of the event type</td>
+</tr>
+<tr>
+<td>include_default_meeting_description</td>
+<td>false</td>
+<td>This parameter is optional and will include the default meeting description</td>
+</tr>
+<tr>
+<td>include_default_meeting_location</td>
+<td>false</td>
+<td>This parameter is optional and will include the default meeting location</td>
+</tr>
+<tr>
+<td>is_inclusive</td>
+<td>false</td>
+<td>This parameter is specific to team link and if true will indicate that all team members must be available</td>
+</tr>
+<tr>
+<td>owner_calendar_id</td>
+<td>17</td>
+<td>This parameter indicates who is the owner of the event</td>
+</tr>
+<tr>
+<td>:id</td>
+<td>13</td>
+<td>This parameter is appended to the URL. Note: If updates are made to a Team Link event type the logged in user should be part of the team, otherwise you will get &quot;Action restricted, user doesn&#39;t belong to the Team&quot; error</td>
+</tr>
+</tbody></table>
+<h2 id='delete-event-type'>Delete Event Type</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/event_type/:id"</span>
+  -H <span class="s2">"x_access_token: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Meeting type was sucessfully destroyed."</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+
+</span></code></pre>
+<p>This endpoint deletes an event type</p>
+<h3 id='http-request-31'>HTTP Request</h3>
+<p><code>DELETE https://login.skedgitnow.com/api/v1/event_type/:id</code></p>
+<h3 id='url-parameters-30'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>:id</td>
+<td>13</td>
+<td>This parameter is appended to the URL. Note: If deleting a Team Link event type the logged in user should be a part of the team, otherwise you will get &quot;Action restricted, user doesn&#39;t belog to the Team&quot; error</td>
+</tr>
+</tbody></table>
+<h1 id='custom-links'>Custom Links</h1><h2 id='create-suggested-event'>Create Suggested Event</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/calendar_events/create_suggested_event"</span>
+  -H <span class="s2">"x_access_token: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">11503</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Custom Link Title"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https;//login.skedgit.com/sa/rHkr..."</span><span class="w">
+</span><span class="p">},</span><span class="w">
+
+
+</span></code></pre>
+<p>This endpoint creates a Custom Link</p>
+<h3 id='http-request-32'>HTTP Request</h3>
+<p><code>POST https://login.skedgitnow.com/api/v1/calendar_events/create_suggested_event</code></p>
+<h3 id='url-parameters-31'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>title</td>
+<td>Title</td>
+<td>This parameter will configure the title of the Custom Link</td>
+</tr>
+<tr>
+<td>description</td>
+<td>Desc</td>
+<td>This parameter will configure the description of the Custom Link</td>
+</tr>
+<tr>
+<td>location</td>
+<td>Loc</td>
+<td>This parameter will configure the location of the Custom Link</td>
+</tr>
+<tr>
+<td>usage_type</td>
+<td>multiple</td>
+<td>This parameter will determine if the Custom Link is a one time or multiple time event (See Appendix)</td>
+</tr>
+<tr>
+<td>calendar_id</td>
+<td>4</td>
+<td>This parameter specifies the calendar id for owner of events on Custom Link</td>
+</tr>
+<tr>
+<td>include_other_users_availability_type</td>
+<td>any</td>
+<td>This parameter indicates whether all internal attendees need to be availalble or just one internal attendee for the event to be booked</td>
+</tr>
+<tr>
+<td>event_times_attributes</td>
+<td>{ &quot;0&quot;: {&quot;start&quot;: &quot;2019-05-09T09:00&quot;, &quot;end&quot;: &#39;2019-05-09T10:00&quot;}, &quot;1&quot;: {&quot;start&quot;: &quot;2019-05-09T13:00&quot;, &quot;end&quot;: &quot;2019-05-09T14:00}},</td>
+<td>This parameter determines the availability time slots that will be presented in the Custom Link</td>
+</tr>
+<tr>
+<td>time_zone</td>
+<td>Mountain Time (US &amp; Canada)</td>
+<td>This determines the time zone used for the Custom Link (See Appendix for values)</td>
+</tr>
+<tr>
+<td>internal_attendees</td>
+<td>[3]</td>
+<td>Identifies the internal Skedgit users</td>
+</tr>
+<tr>
+<td>external_attendees</td>
+<td>[&quot;test1@google.com&quot;, &quot;test2@google.com&quot;]}</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='create-send-all-availability-link'>Create Send All Availability Link</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/calendar_events/create_send_all_availability_link"</span>
+  -H <span class="s2">"x_access_token: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">11503</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Custom Link Title"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https;//login.skedgit.com/sa/rHkr..."</span><span class="w">
+</span><span class="p">},</span><span class="w">
+
+
+</span></code></pre>
+<p>This endpoint creates a Custom Link with all availability included between two datess</p>
+<h3 id='http-request-33'>HTTP Request</h3>
+<p><code>POST https://login.skedgitnow.com/api/v1/calendar_events/create_send_all_availabilty_link</code></p>
+<h3 id='url-parameters-32'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>{title</td>
+<td>Title</td>
+<td>This parameter will configure the title of the Custom Link</td>
+</tr>
+<tr>
+<td>description</td>
+<td>Desc</td>
+<td>This parameter will configure the description of the Custom Link</td>
+</tr>
+<tr>
+<td>location</td>
+<td>Loc</td>
+<td>This parameter will configure the location of the Custom Link</td>
+</tr>
+<tr>
+<td>usage_type</td>
+<td>multiple</td>
+<td>This parameter will determine if the Custom Link is a one time or multiple time event (See Appendix)</td>
+</tr>
+<tr>
+<td>calendar_id</td>
+<td>2</td>
+<td>This parameter specifies the calendar id for owner of events on Custom Link</td>
+</tr>
+<tr>
+<td>include_other_users_availability_type</td>
+<td>any</td>
+<td>This parameter indicates whether all internal attendees need to be availalble or just one internal attendee for the event to be booked</td>
+</tr>
+<tr>
+<td>start_date</td>
+<td>2019-05-09</td>
+<td>This parameter determines the start date of the availability shared (limited to 2 week span)</td>
+</tr>
+<tr>
+<td>end_date</td>
+<td>2019-05-15</td>
+<td>This parameter determines the end date of the availabilty shared (limited to 2 week span)</td>
+</tr>
+<tr>
+<td>time_zone</td>
+<td>Mountain Time (US &amp; Canada)</td>
+<td>This determines the time zone used for the Custom Link (See Appendix for values)</td>
+</tr>
+<tr>
+<td>duration</td>
+<td>60</td>
+<td>This parameter will configure the duration of the event</td>
+</tr>
+<tr>
+<td>internal_attendees</td>
+<td>[3]</td>
+<td>Identifies the internal Skedgit users</td>
+</tr>
+<tr>
+<td>external_attendees</td>
+<td>[&quot;test1@google.com&quot;, &quot;test2@google.com&quot;]}</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='get-all-custom-links'>Get All Custom Links</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/calendar_events/get_all_custom_links"</span>
+  -H <span class="s2">"x_access_token"</span>: <span class="s2">"meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"custom_links"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">9762</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Custom Event One"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"your custom link URL"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10434</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Test Custom Link"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"your custom link URL"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint returns all Custom Links created by Skedgit User.</p>
+<h3 id='http-request-34'>HTTP Request</h3>
+<p><code>GET https://login.skedgitnow.com/api/calendar_events/get_all_custom_links</code></p>
+<h3 id='url-parameters-33'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<aside class="notice">There are no Parameters associated with this endpoint.</aside>
+<h2 id='delete-custom-link'>Delete Custom Link</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/calendar_events/:event_id"</span>
+  -H <span class="s2">"x_access_token"</span>: <span class="s2">"meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Successfully deleted"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint deletes a specified Custom Link.</p>
+<h3 id='http-request-35'>HTTP Request</h3>
+<p><code>DELETE https://login.skedgitnow.com/api/calendar_events/:event_id</code></p>
+<h3 id='url-parameters-34'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>:event_id</td>
+<td>9762</td>
+<td>This parameter is appended to the URL</td>
+</tr>
+</tbody></table>
+<h1 id='skedgisense'>SkedgiSense</h1><h2 id='create-skedgisense-link'>Create SkedgiSense Link</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/calendar_events/create_skedgi_sense"</span>
+  -H <span class="s2">"x_access_token"</span>: <span class="s2">"meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9363"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SkedgiSense Title"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"info_link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://login.skedgit.me/ez/hdpxBGiXDjbhmMVWWot6No7s/info"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"google_link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://login.skedgit.me/ez/hdpxBGiXDjbhmMVWWot6No7s/google_redirect"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"outlook_link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://login.skedgit.me/ez/hdpxBGiXDjbhmMVWWot6No7s/outlook_redirect"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"custom_link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://login.skedgit.me/ez/hdpxBGiXDjbhmMVWWot6No7s/custom_link"</span><span class="p">,</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint creates a SkedgiSense Link.</p>
+<h3 id='http-request-36'>HTTP Request</h3>
+<p><code>POST https://login.skedgitnow.com/api/calendar_events/create_skedgi_sense</code></p>
+<h3 id='url-parameters-35'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>title</td>
+<td>SkedgiSense Title</td>
+<td>This parameter defines the title of the event</td>
+</tr>
+<tr>
+<td>include_default_location</td>
+<td>true</td>
+<td>This parameter includes the default location in the event if true</td>
+</tr>
+<tr>
+<td>include_default_description</td>
+<td>true</td>
+<td>This parameter includes the default description in the event if true</td>
+</tr>
+<tr>
+<td>duration</td>
+<td>60</td>
+<td>This parameter defines the duration of the event</td>
+</tr>
+<tr>
+<td>time_zone</td>
+<td>Mountain Time (US &amp; Canada)</td>
+<td>Defines the time zone</td>
+</tr>
+<tr>
+<td>attendees</td>
+<td>test1@google.com</td>
+<td>lists the attendess included in the SkedgiSense link</td>
+</tr>
+<tr>
+<td>calendar_id</td>
+<td>3</td>
+<td>This parameter defines the owner of the event shared in the link</td>
+</tr>
+<tr>
+<td>attendees</td>
+<td>[test1@google.com, test2@google.com]</td>
+<td>This parameter defines the attendees included in the link</td>
+</tr>
+<tr>
+<td>start_time</td>
+<td>2019-04-23 (format: YYYY-MM-DD)</td>
+<td>Defines the start date that availablity is taken into account</td>
+</tr>
+<tr>
+<td>end_time</td>
+<td>2019-04-24 (format: YYYY-MM-DD)</td>
+<td>Defines the end date that availability is taken into account</td>
+</tr>
+</tbody></table>
+<h2 id='create-skedgisense-one-click-meeting'>Create SkedgiSense One-Click Meeting</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/calendar_events/create_skedgi_sense"</span>
+  -H <span class="s2">"x_access_token"</span>: <span class="s2">"meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Meeting successfully scheduled"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint creates a SkedgiSense One-Click Meeting.</p>
+<h3 id='http-request-37'>HTTP Request</h3>
+<p><code>POST https://login.skedgitnow.com/api/calendar_events/create_skedgi_sense</code></p>
+<h3 id='url-parameters-36'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>title</td>
+<td>SkedgiSense Internal Meeeting Title</td>
+<td>This parameter defines the title of the event</td>
+</tr>
+<tr>
+<td>include_default_location</td>
+<td>true</td>
+<td>This parameter includes the default location in the event if true</td>
+</tr>
+<tr>
+<td>include_default_description</td>
+<td>true</td>
+<td>This parameter includes the default description in the event if true</td>
+</tr>
+<tr>
+<td>duration</td>
+<td>60</td>
+<td>This parameter defines the duration of the event</td>
+</tr>
+<tr>
+<td>time_zone</td>
+<td>Mountain Time (US &amp; Canada)</td>
+<td>Defines the time zone</td>
+</tr>
+<tr>
+<td>internal_only</td>
+<td>true</td>
+<td>This indicates that it will be a one-click scheduled meeting instead of a link</td>
+</tr>
+<tr>
+<td>attendees</td>
+<td>[test1@google.com, test2@google.com]</td>
+<td>This parameter defines the attendees included in the link</td>
+</tr>
+<tr>
+<td>start_time</td>
+<td>2019-04-23 (format: YYYY-MM-DD)</td>
+<td>Defines the start date that availablity is taken into account</td>
+</tr>
+<tr>
+<td>end_time</td>
+<td>2019-04-24 (format: YYYY-MM-DD)</td>
+<td>Defines the end date that availability is taken into account</td>
+</tr>
+</tbody></table>
+<h2 id='skedgisense-event-details'>SkedgiSense Event Details</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://login.skedgitnow.com/api/v1/calendar_events/skedgi_sense_events_details/:id"</span>
+  -H <span class="s2">"x_access_token: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">9363</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This is a SkedgiSense Link Event Title"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"info_link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://login.skedgit.me/ez/hdpxBGiXD..."</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"google_link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://login.skedgit.me/ez/hdpxBGiXD..."</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"outlook_link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://login.skedgit.me/ez/hdpxBGiXD..."</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"custom_link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://login.skedgit.me/ez/hdpxBGiXD..."</span><span class="p">,</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">},</span><span class="w">
+</span><span class="p">]</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint displays all SkediSense event details.</p>
+<h3 id='http-request-38'>HTTP Request</h3>
+<p><code>GET https://login.skedgitnow.com/api/v1/calendar_events/skedgi_sense_event_details/:id</code></p>
+<h3 id='url-parameters-37'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>:id</td>
+<td>9363</td>
+<td>This parameter will be appended to the URL and retrieve a specific SkedgiSense link</td>
+</tr>
+</tbody></table>
+<h1 id='appendix'>Appendix</h1><h2 id='meeting-type-event-type'>Meeting Type / Event Type</h2>
+<p>Add different types of events to Personal Link and Team Link (like a meeting with a different duration)</p>
+<h3 id='attributes'>Attributes</h3><h3 id='1-title-string'>1. title (string):</h3>
+<p>Represents the title for event type (Required)</p>
+<h3 id='2-duration-number'>2. duration (number):</h3>
+<p>Represents the duration for meetings. Value must be in minutes. Default: 30 (30 minutes) Allowed durations: 10, 15, 30, 45, 60, 75, 90, 120 (Optional Field)</p>
+<h3 id='3-include_default_meeting_description-boolean'>3. include_default_meeting_description (boolean):</h3>
+<p>If true, the users default meeting description will be used for the meeting. Default: false (Optional field)</p>
+<h3 id='4-include_default_meeting_location-boolean'>4. include_default_meeting_location (boolean):</h3>
+<p>If true, the users default meeting location will be used for the meeting. Default: false (Optional field)</p>
+<h3 id='5-owner_calendar_id-string'>5. owner_calendar_id (string):</h3>
+<p>Applicable only for Personal Link. Calendar id of the calendar with which this event type should be associated. Default: logged in user&#39;s primary calendar id (Optional field)</p>
+<h3 id='6-is_inclusive-string'>6. is_inclusive (string):</h3>
+<p>Special case for team link where availability is shown based on all the team members availability. Default: false. Note: applicable only for team link. (Optional field)</p>
+<h3 id='7-owner_type-readonly'>7. owner_type (ReadOnly):</h3>
+<p>Specifies whether the event type belongs to Team Link or Personal Link. Value: &#39;User&#39; for Personal Link and &#39;Team&#39; for Team Link</p>
+<h3 id='8-owner_id-readonly'>8. owner_id (ReadOnly):</h3>
+<p>Cooresponds to the owner id of event type, for Personal Link it will be the logged in User id and for Team Link it will be the team id.</p>
+<h2 id='custom-link'>Custom Link</h2><h3 id='attributes-2'>Attributes</h3><h3 id='1-title-string-2'>1. title: (string)</h3>
+<p>Specifies the title of the custom link</p>
+<h3 id='2-description-string'>2. description: (string)</h3>
+<p>specifies the description fo the custom link</p>
+<h3 id='3-location-string'>3. location: (string)</h3>
+<p>specifies the location of the custom link</p>
+<h3 id='4-include_default_location-boolean'>4. include_default_location: (boolean)</h3>
+<p>default value is false, if specified the location will be the default user location, if location (3rd params in the list) is already provided this attribute will have no effect on the location of the custom link</p>
+<h3 id='5-include_default_description-boolean'>5. include_default_description: (boolean)</h3>
+<p>default value is false, if specified the description will be the default user description, if description (4th params in the list) is already provided this attribute will have no effect on the description of the custom link</p>
+<h3 id='6-usage_type-string'>6. usage_type: (string)</h3>
+<p>default value is &#39;single&#39;. Possible values are &#39;single&#39; or &#39;multiple&#39;. Single: create a custom link that can be used for single time (i.e. Once someone books an event this link will become inactive). Multiple: creates a custom link that can be used for multiple time use (Until all the available times are booked or are in the past)</p>
+<h3 id='7-calendar_id-number'>7. calendar_id (number)</h3>
+<p>If a user has multiple calendars then this will determine which calendar the event will be booked. Default value is your primary calendar id</p>
+<h3 id='8-internal_attendees-array-of-numbers'>8. internal_attendees: (array of numbers)</h3>
+<p>The users id&#39;s in your Organization can be used here</p>
+<h3 id='9-external_attendees-array-of-emails'>9. external_attendees: (array of emails)</h3>
+<p>Any email that is outside of your organization</p>
+<h3 id='10-include_other_users_availability_type-string'>10. include_other_users_availability_type: (string)</h3>
+<p>Default value is &#39;all&#39;. Possible values are &#39;all&#39; or &#39;any&#39;. &#39;all&#39;: show availability based on you and internal_attendees availability, show only those events where you and internal_attendees are available. &#39;any&#39;: show availabilty based on you and internal_attendees availability, show only those events when either you or other internal_attendees are available.</p>
+<h3 id='11-event_times_attributes-object-of-start-and-end-time'>11. event_times_attributes: (object of start and end time)</h3>
+<p>See example in sample request where start is the start time and end is the end time. Format for start and end time is 2019-05-09T9:00 (yyyy-mm-ddThh:mm). </p>
+<h3 id='12-time_zone'>12. time_zone:</h3>
+<p>Time zone of user (See Appendix: Time Zone Values)</p>
+<h3 id='13-duration'>13. duration:</h3>
+<p>Specifies the duration of the event</p>
+<h3 id='14-start_date'>14. start_date:</h3>
+<p>Specifies the start date (format: yyyy-mm-dd)</p>
+<h3 id='15-end_date'>15. end_date:</h3>
+<p>Specifies the end date (format: yyyy-mm-dd)</p>
+<h2 id='time-zone-values'>Time Zone Values</h2>
+<p>&quot;Hawaii&quot;,
+&quot;Alaska&quot;,
+&quot;Pacific Time (US &amp; Canada)&quot;,
+&quot;Mountain Time (US &amp; Canada)&quot;,
+&quot;Arizona&quot;,
+&quot;Central Time (US &amp; Canada)&quot;,
+&quot;Eastern Time (US &amp; Canada)&quot;,
+&quot;Atlantic Time (Canada)&quot;,
+&quot;Newfoundland&quot;,
+&quot;Greenland&quot;,
+&quot;Mid-Atlantic&quot;,
+&quot;Azores&quot;,
+&quot;London&quot;,
+&quot;Paris&quot;,
+&quot;Athens&quot;,
+&quot;Istanbul&quot;,
+&quot;Tehran&quot;,
+&quot;Abu Dhabi&quot;,
+&quot;Kabul&quot;,
+&quot;Islamabad&quot;,
+&quot;Mumbai&quot;,
+&quot;Kathmandu&quot;,
+&quot;Dhaka&quot;,
+&quot;Bangkok&quot;,
+&quot;Hong Kong&quot;,
+&quot;Tokyo&quot;,
+&quot;Darwin&quot;,
+&quot;Brisbane&quot;,
+&quot;Magadan&quot;,
+&quot;Fiji&quot;,
+&quot;Chatham Is.&quot;,
+&quot;Somoa&quot;</p>
+<h1 id='errors'>Errors</h1>
+<p>The Skedgit API uses the following error codes:</p>
 
 <table><thead>
 <tr>
@@ -454,40 +2623,12 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
 <td>Unauthorized -- Your API key is wrong.</td>
 </tr>
 <tr>
-<td>403</td>
-<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
-</tr>
-<tr>
 <td>404</td>
-<td>Not Found -- The specified kitten could not be found.</td>
-</tr>
-<tr>
-<td>405</td>
-<td>Method Not Allowed -- You tried to access a kitten with an invalid method.</td>
-</tr>
-<tr>
-<td>406</td>
-<td>Not Acceptable -- You requested a format that isn&#39;t json.</td>
-</tr>
-<tr>
-<td>410</td>
-<td>Gone -- The kitten requested has been removed from our servers.</td>
-</tr>
-<tr>
-<td>418</td>
-<td>I&#39;m a teapot.</td>
-</tr>
-<tr>
-<td>429</td>
-<td>Too Many Requests -- You&#39;re requesting too many kittens! Slow down!</td>
+<td>Bad Request -- Your request is invalid.</td>
 </tr>
 <tr>
 <td>500</td>
 <td>Internal Server Error -- We had a problem with our server. Try again later.</td>
-</tr>
-<tr>
-<td>503</td>
-<td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
 </tr>
 </tbody></table>
 
