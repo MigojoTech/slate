@@ -1941,7 +1941,7 @@ This endpoint creates a Custom Link
 
 Parameter | Value | Description
 --------- | ----------- | ------------
-title | Title | This parameter will configure the title of the Custom Link
+{title | Title | This parameter will configure the title of the Custom Link
 description | Desc | This parameter will configure the description of the Custom Link
 location | Loc | This parameter will configure the location of the Custom Link
 usage_type | multiple | This parameter will determine if the Custom Link is a one time or multiple time event (See Appendix)
