@@ -2324,6 +2324,8 @@ Parameter | Value | Description
 
 # Webhook
 
+## Calendars Event Details
+
 ```ruby
 require 'kittn'
 
@@ -2369,7 +2371,7 @@ let max = api.kittens.delete(2);
   }
 ```
 
-This endpoint provides the additional meeting details.
+This endpoint provides additional meeting details.
 
 
 ### HTTP Request
