@@ -2322,6 +2322,67 @@ Parameter | Value | Description
 --------- | ----------- | ------------
 :id | 9363 | This parameter will be appended to the URL and retrieve a specific SkedgiSense link
 
+# Webhook
+
+```ruby
+require 'kittn'
+
+api = Kittn::APIClient.authorize!('meowmeowmeow')
+api.kittens.delete(2)
+```
+
+```python
+import kittn
+
+api = kittn.authorize('meowmeowmeow')
+api.kittens.delete(2)
+```
+
+```shell
+curl "https://login.skedgitnow.com/api/v1/calendar_events/calendar_event_details/:id"
+  -H "x_access_token: meowmeowmeow"
+```
+
+```javascript
+const kittn = require('kittn');
+
+let api = kittn.authorize('meowmeowmeow');
+let max = api.kittens.delete(2);
+```
+
+> The above command returns JSON structured like this:
+
+```json
+[
+{
+  "id": 4404,
+  "title": "Yada Yada",
+  "location": "",
+  "description": "",
+  "start_time": "2019-12-14T08:00:00.000Z",
+  "end_time": "2019-12-14T08:30:00.000Z",
+  "organizer_email": "test@test.com",
+  "attendees": [
+    "test2@test.com",
+    "test3@test.com"
+  ]
+  }
+```
+
+This endpoint provides the additional meeting details.
+
+
+### HTTP Request
+
+`GET https://login.skedgitnow.com/api/v1/calendar_events/calendar_event_details/:id`
+
+### URL Parameters
+
+Parameter | Value | Description
+--------- | ----------- | ------------
+:id | 4404 | id of the calendar event
+
+
 
 # Appendix
 
